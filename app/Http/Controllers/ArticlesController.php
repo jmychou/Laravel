@@ -42,7 +42,7 @@ class ArticlesController extends Controller {
 	}
 
     /*
-     * 提交文章到数据库
+     * 提交文章到数据库,后续修改
      */
 	public function store(){
 		$input=Request::all();
