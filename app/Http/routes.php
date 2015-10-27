@@ -16,10 +16,11 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
 Route::get('about','PagesController@index');
-Route::get('articles', 'ArticlesController@index');
+/*Route::get('articles', 'ArticlesController@index');
 Route::post('articles', 'ArticlesController@store');
 Route::get('articles/create','ArticlesController@create');	
-Route::get('articles/{id}', 'ArticlesController@show');
+Route::get('articles/{id}', 'ArticlesController@show');*/
+Route::resource('articles','ArticlesController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
